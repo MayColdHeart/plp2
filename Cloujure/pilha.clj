@@ -2,7 +2,7 @@
 (def pilha-vazia '())
 
 ;; 2. Comportamentos (Funções Puras)
-;; No paradigma funcional, as funções recebem dados e retornam novos dados, sem alterar o original.
+;; No paradigma funcional, as funções recebem dados e retornam novos dados, sem alterar o original. (imutabilidade)
 
 ;; Empilhar (Push): 'conj' adiciona o elemento no início da lista (topo da pilha)
 (defn empilhar [pilha valor]
@@ -37,7 +37,7 @@
     
     (println "\n[OK] Desempilhando de p3 -> Nova Pilha p4:" p4)
     
-    (println "\n[!] PROVA DE IMUTABILIDADE:")
+    (println "\nImutabilidade:")
     (println "A pilha p3 original não foi alterada, ela ainda é:" p3)))
 
 ;; Chama a função para rodar o teste

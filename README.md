@@ -55,14 +55,12 @@ Abaixo estão os comandos necessários para compilar e rodar a demonstração de
 
 1. Navegue até a pasta do Clojure:
 
-```cd```
+```cd Clojure```
 
-2. Compile o código gerando o executável:
+2. Copie o código do do arquivo.clj
 
-```pilha.c -o pilha```
+```pilha.clj```
 
-3. Execute o programa:
-
-```pilha```
+3. Para facilitar, execute o programa em um compilador online
 
 ---

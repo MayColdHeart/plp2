@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class App {
     private Pilha_Humano pilhaVetor;
     private Pilha_Humano pilhaEncadeada;
-    private Pilha pilhaIA; 
+    private Pilha pilha; 
     
     private int tipoAtual; 
     private Scanner scanner;
@@ -13,7 +13,7 @@ public class App {
         // Inicializa as 3 implementações
         pilhaVetor = new PilhaComVetor(20);
         pilhaEncadeada = new PilhaEncadeada();
-        pilhaIA = new Pilha(20);
+        pilha = new Pilha(20);
         scanner = new Scanner(System.in);
     }
 
@@ -64,7 +64,7 @@ public class App {
                             pilhaEncadeada.empilha(valor);
                             System.out.println("[OK] " + valor + " empilhado.");
                         } else {
-                            pilhaIA.push(valor);
+                            pilha.push(valor);
                         }
                         break;
                         
@@ -74,7 +74,7 @@ public class App {
                         } else if (tipoAtual == 2) {
                             System.out.println("[OK] Valor desempilhado: " + pilhaEncadeada.desempilha());
                         } else {
-                            pilhaIA.pop(); 
+                            pilha.pop(); 
                         }
                         break;
                         
@@ -101,7 +101,7 @@ public class App {
     private void exibirEstadoPilha() {
 
         if (tipoAtual == 3) {
-            pilhaIA.exibir();
+            pilha.exibir();
             return;
         }
 
@@ -155,7 +155,7 @@ public class App {
     private boolean isPilhaAtualVazia() {
         if (tipoAtual == 1) return pilhaVetor.vazia();
         if (tipoAtual == 2) return pilhaEncadeada.vazia();
-        return pilhaIA.isEmpty();
+        return pilha.isEmpty();
     }
 
     private void escolherDestinoETrocar() {
@@ -193,7 +193,7 @@ public class App {
                 } else if (tipoAtual == 2) {
                     valorExtraido = (Integer) pilhaEncadeada.desempilha();
                 } else {
-                    valorExtraido = pilhaIA.pop(); 
+                    valorExtraido = pilha.pop(); 
                 }
                 
                 if (tipoDestino == 1) {
@@ -201,7 +201,7 @@ public class App {
                 } else if (tipoDestino == 2) {
                     pilhaEncadeada.empilha(valorExtraido);
                 } else {
-                    pilhaIA.push(valorExtraido);
+                    pilha.push(valorExtraido);
                 }
                 
                 itensMovidos++;
