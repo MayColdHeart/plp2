@@ -51,8 +51,6 @@ Abaixo estão os comandos necessários para compilar e rodar a demonstração de
 
 ### 2. Clojure (Paradigma Funcional)
 
-**Pré-requisito:**
-
 1. Navegue até a pasta do Clojure:
 
 ```cd Clojure```
