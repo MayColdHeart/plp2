@@ -17,6 +17,7 @@ Este repositório contém a demonstração prática do trabalho de avaliação d
 * **Davi de Souza Lopes**
 * **Mariana Monteiro Bispo**
 * **Mayra Sales da Costa**
+* **Leonardo Alves Rezende**
 
 ## Estrutura do Projeto e Comparação de Versões
 
