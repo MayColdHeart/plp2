@@ -20,10 +20,10 @@ Este repositório contém a demonstração prática do trabalho de avaliação d
 
 ## Estrutura do Projeto e Comparação de Versões
 
-O projeto está dividido em diretórios por linguagem/paradigma.
+Diretórios
 
-1. **Java:**
-2. **Clojure:**
+1. **Java:** `cd plp2\Cloujure`
+2. **Clojure:** `cd plp2\Java\pilha\src\App.java`
 
 ---
 
